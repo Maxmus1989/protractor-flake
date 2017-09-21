@@ -51,5 +51,13 @@ context('multiParser', function () {
         '/tests/a-flakey.test.coffee'
       ])
     })
+
+    it('properly handles a single test failed on x attempt', function () {
+      let output = readFixture('sharded-output-single-failure-refail-on-next-attempt.txt')
+
+      expect(multiParser.parse(output)).to.eql([
+        '/tests/failed-spec.js'
+      ])
+    })
   })
 })

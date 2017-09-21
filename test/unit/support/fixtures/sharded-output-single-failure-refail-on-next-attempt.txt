@@ -1,0 +1,16 @@
+Re-running tests: test attempt 2
+Re-running the following test files:
+/tests/failed-spec.js
+[04:48:25] I/launcher - Running 1 instances of WebDriver
+[04:48:25] I/hosted - Using the selenium server at http://localhost:4444/wd/hub
+Started
+Spec started
+.
+  Failures:
+    ✓ when created something (1 sec)
+.    ✓ when a something is created (0.114 sec)
+.    ✓ Given someone to do something with nothing (0.093 sec)
+.    ✓ when the someone login and navigates to something (8 secs)
+{ NoSuchElementError: Index out of bound. Trying to access element at index: 0, but there are only 0 elements that match locator by.cssContainingText(".something") }
+
+[04:49:00] E/launcher - Process exited with error code 1
